@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/image_background_user"
+    tools:context=".user.HomeFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/userHomeFragment_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorMain"
+        app:elevation="4dp"
+        android:theme="@style/ToolbarStyleWhite">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_app_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:layout_gravity="center" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/userHomeFragment_Header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/userHomeFragment_ProfilePhotoView"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:padding="3dp"
+            android:background="@drawable/utils_circle_white"
+            android:layout_centerInParent="true">
+
+            <vigi.patient.utils.RoundedImage
+                android:id="@+id/userHomeFragment_ProfilePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/photo_person_text"
+                android:src="@drawable/image_photo"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="7.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_name_example_text"
+            android:textColor="@color/colorBlueStrong"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_below="@id/userHomeFragment_ProfilePhotoView"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userHomeFragment_Footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="45">
+
+                <ImageView
+                    android:id="@+id/userHomeFragment_CallHelpBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/call_help_image"
+                    android:src="@drawable/image_call"
+                    android:layout_above="@id/userHomeFragment_CallHelpText"/>
+
+                <TextView
+                    android:id="@+id/userHomeFragment_CallHelpText"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/call_care_text"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorSecondary"/>
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.55"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="45">
+
+                <ImageView
+                    android:id="@+id/userHomeFragment_HomeHelpBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/video_help_image"
+                    android:src="@drawable/image_video_call"
+                    android:layout_above="@id/userHomeFragment_HomeHelpText"/>
+
+                <TextView
+                    android:id="@+id/userHomeFragment_HomeHelpText"
+                    android:layout_marginTop="7.5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/video_care_text"
+                    android:textColor="@color/colorSecondary"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icon_help"
+        android:title="@string/nav_home_text" />
+
+    <item
+        android:id="@+id/navigation_timeline"
+        android:icon="@drawable/icon_timeline"
+        android:title="@string/nav_timeline_text" />
+
+
+    <item
+        android:enabled="false"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/icon_events"
+        android:title="@string/nav_events_text" />
+
+
+    <item
+        android:id="@+id/navigation_health"
+        android:icon="@drawable/icon_heart"
+        android:title="@string/nav_health_text" />
+
+</menu>

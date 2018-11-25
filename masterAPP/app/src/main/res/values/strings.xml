@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- UTILS STRINGS -->
+
+    <string name="vigi_email">vigi.noreply@gmail.com</string>
+    <string name="vigi_password">aR7-HER-pdh-xW9</string>
+    <string name="internet_connection_not_available_text">Internet connection is not available</string>
+    <string name="app_name_text">vigi</string>
+
+    <!-- LOGIN/REGISTER STRINGS -->
+
+    <string name="name_app_text">Vigi</string>
+    <string name="password_hint_text">Password</string>
+    <string name="sign_up_here_text">Sign up here!</string>
+    <string name="forgotten_password_btn_text">Forgotten password?</string>
+    <string name="log_in_text">Login</string>
+    <string name="no_account_text">You don\'t have an account?</string>
+    <string name="already_have_an_account_text">Already have an account?</string>
+    <string name="e_mail_hint_text">E-mail</string>
+    <string name="register_text">Register</string>
+    <string name="sign_in_here_btn">Sign in here.</string>
+    <string name="terms_and_conditions_text">Terms and Conditions</string>
+    <string name="load_spinner_image">load_spinner</string>
+    <string name="ok_text">OK</string>
+    <string name="name_hint_text">Name</string>
+    <string name="male_text">Male</string>
+    <string name="female_text">Female</string>
+    <string name="number_hint_text">Phone number</string>
+    <string name="date_of_birth_text">Date of Birth</string>
+    <string name="code_received_text">Code Received</string>
+    <string name="welcome_to_text">Welcome to</string>
+    <string name="logo_image">logo</string>
+    <string name="welcome_back_text">Welcome back,</string>
+    <string name="sign_in_to_continue_text">sign in to continue</string>
+    <string name="medical_kit_image">medical_kit</string>
+    <string name="staff_image">staff</string>
+    <string name="home_slide_two_text">Explore our amazing staff, always ready to assist you</string>
+    <string name="home_slide_one_text">Get the help you need, right in the corner.</string>
+    <string name="home_care_image">home_care</string>
+    <string name="home_slide_three_text">Get daily assistance at your house.</string>
+    <string name="error_text">error</string>
+    <string name="please_enter_your_e_mail_text">Please enter your e-mail</string>
+    <string name="email_afterwards_text">An e-mail will be sent to you afterwards!</string>
+
+    <!-- USER STRINGS -->
+
+    <string name="events_fragment_text">Events fragment</string>
+    <string name="timeline_fragment_text">Timeline fragment</string>
+    <string name="photo_person_text">photo_person</string>
+    <string name="video_help_image">video_help_background</string>
+    <string name="call_help_image">call_help_background</string>
+    <string name="nav_home_text">Help</string>
+    <string name="nav_health_text">Health</string>
+    <string name="nav_events_text">Events</string>
+    <string name="nav_timeline_text">Timeline</string>
+    <string name="video_care_text">Video support</string>
+    <string name="call_care_text">Call support</string>
+    <string name="patient_name_example_text">Anna Baker</string>
+    <string name="medical_file_text">Medical File</string>
+    <string name="health_record_text">Health Record</string>
+    <string name="hello_blank_fragment_text">Hello blank fragment</string>
+    <string name="logo_white_image">logo_white</string>
+    <string name="get_started_text">Get started,</string>
+    <string name="sign_up_to_continue_text">sign up to continue</string>
+
+</resources>

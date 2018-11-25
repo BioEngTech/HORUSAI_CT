@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vigi.patient">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".utils.FontFamilyInitiation"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/name_app_text"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".initiation.WelcomeScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- HOME ACTIVITY -->
+        <activity
+            android:name=".initiation.Home"
+            android:screenOrientation="portrait" />
+        <!-- REGISTER ACTIVITY -->
+        <activity
+            android:theme="@style/AppThemeSecondary"
+            android:name=".initiation.Register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- LOGIN ACTIVITY -->
+        <activity
+            android:name=".initiation.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- FORGOT_PASSWORD ACTIVITY -->
+        <activity
+            android:name=".initiation.ForgotPassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".initiation.Login" />
+        </activity>
+        <!-- USER MAIN ACTIVITY -->
+        <activity
+            android:name=".user.Main"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/initiationLogin_scrollView"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:background="@color/colorMain"
+    tools:context=".initiation.Login">
+
+    <LinearLayout
+        android:id="@+id/initiationLogin_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/initiationLogin_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarStyleWhite">
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/welcome_back_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/sign_in_to_continue_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+            <vigi.patient.utils.ClearableNotLockableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/initiationLogin_email"
+                    android:textColor="@color/colorDark"
+                    android:hint="@string/e_mail_hint_text"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp">
+            </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <vigi.patient.utils.ClearableNotLockableEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:imeOptions="actionGo"
+                        android:id="@+id/initiationLogin_password"
+                        android:textColor="@color/colorDark"
+                        android:hint="@string/password_hint_text"
+                        android:inputType="textVisiblePassword"
+                        android:textColorHint="@color/colorWhite"
+                        android:backgroundTint="@color/colorWhite"
+                        android:ems="10"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="10dp"
+                       >
+                </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp">
+
+                <TextView
+                    android:id="@+id/initiationLogin_forgotPassButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forgotten_password_btn_text"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|center_vertical"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:background="@drawable/utils_btn_rounded_transparent"
+                        android:id="@+id/initiationLogin_loginButton"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/log_in_text"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/initiationLogin_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/load_spinner_image"
+                        android:src="@drawable/image_spinner"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/initiationLogin_footer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/initiationLogin_noAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_account_text"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_below="@id/initiationLogin_noAccountText"
+                android:id="@+id/initiationLogin_signUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up_here_text"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

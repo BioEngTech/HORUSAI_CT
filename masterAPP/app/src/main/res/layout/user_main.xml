@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".user.Main">
+
+    <FrameLayout
+        android:id="@+id/userMain_MainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/userMain_BottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/colorMain"
+        app:itemIconTint="@drawable/utils_nav_item_colors"
+        app:itemTextColor="@drawable/utils_nav_item_colors"
+        app:menu="@menu/nav_items">
+
+    </android.support.design.widget.BottomNavigationView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/image_plus_hex"
+        app:layout_anchor="@+id/userMain_BottomNav"
+        app:layout_anchorGravity="center|top"
+        app:backgroundTint="@color/colorSecondary"
+        android:background="@color/colorDark"
+        app:elevation="8dp" />
+
+</android.support.design.widget.CoordinatorLayout>

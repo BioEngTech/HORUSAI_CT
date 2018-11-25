@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".initiation.WelcomeScreen"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/image_logo"
+        android:contentDescription="@string/logo_image"/>
+
+    <LinearLayout
+        android:id="@+id/initiationWelcomeScreen_welcomeToVigi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="welcomeToVigi"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_text"
+        android:textColor="@color/colorMain"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorMain"
+        android:textSize="35sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

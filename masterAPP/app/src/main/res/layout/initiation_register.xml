@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/initiationRegister_scrollview"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:background="@color/transparent"
+    tools:context=".initiation.Register">
+
+    <LinearLayout
+        android:id="@+id/initiationRegister_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/colorBlueLight">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/initiationRegister_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarStyleWhite">
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/get_started_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/sign_up_to_continue_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <vigi.patient.utils.ClearableNotLockableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/initiationRegister_name"
+                    android:textColor="@color/colorDark"
+                    android:hint="@string/name_hint_text"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp">
+
+                </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <vigi.patient.utils.ClearableNotLockableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/initiationRegister_phoneNumber"
+                    android:textColor="@color/colorDark"
+                    android:hint="@string/number_hint_text"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp">
+                </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/initiationRegister_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="start"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/initiationRegister_genderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male_text"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/RadioStyle"
+                    android:textSize="18sp"/>
+
+                <RadioButton
+                    android:id="@+id/initiationRegister_genderFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female_text"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/RadioStyle"
+                    android:textSize="18sp"/>
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <vigi.patient.utils.ClearableNotLockableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/initiationRegister_birthday"
+                    android:textColor="@color/colorDark"
+                    android:hint="@string/date_of_birth_text"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp">
+                </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <vigi.patient.utils.ClearableNotLockableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionNext"
+                    android:id="@+id/initiationRegister_email"
+                    android:textColor="@color/colorDark"
+                    android:hint="@string/e_mail_hint_text"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp">
+                </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorWhite">
+
+                <vigi.patient.utils.ClearableNotLockableEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:imeOptions="actionGo"
+                    android:id="@+id/initiationRegister_Password"
+                    android:textColor="@color/colorDark"
+                    android:hint="@string/password_hint_text"
+                    android:textColorHint="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:ems="10"
+                    android:inputType="textVisiblePassword"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp">
+                </vigi.patient.utils.ClearableNotLockableEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/initiationRegister_buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp">
+
+                <TextView
+                    android:id="@+id/initiationRegister_termsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_conditions_text"
+                    android:textAppearance="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="start|center_vertical"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:background="@drawable/utils_btn_rounded_transparent"
+                        android:id="@+id/initiationRegister_registerButton"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/register_text"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/initiationRegister_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/load_spinner_image"
+                        android:src="@drawable/image_spinner"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/initiationRegister_footer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="end|center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/initiationRegister_accountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account_text"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_below="@id/initiationRegister_accountText"
+                android:id="@+id/initiationRegister_signInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_here_btn"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

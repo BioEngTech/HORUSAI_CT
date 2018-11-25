@@ -1,0 +1,62 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:typeface">serif</item>
+        <item name="colorPrimary">@color/colorMain</item>
+        <item name="colorPrimaryDark">@color/colorMain</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="hint" parent="@style/TextAppearance.Design.Hint">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppThemeSecondary" parent="@style/AppTheme">
+        <item name="colorPrimaryDark">@color/colorBlueLight</item>
+    </style>
+
+    <style name="HintLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorMain</item>
+    </style>
+
+    <style name="TextLabelAccent" parent="@style/AppTheme">
+        <item name="android:colorControlNormal">@color/colorMain</item>
+        <item name="android:colorControlActivated">@color/colorMain</item>
+        <item name="android:colorControlHighlight">@color/colorMain</item>
+    </style>
+
+    <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="ToolbarStyleWhite" parent="@style/AppTheme">
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="RadioStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+</resources>
